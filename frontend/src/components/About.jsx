@@ -13,9 +13,9 @@ const About = () => {
     },
     {
       icon: Zap,
-      value: "2+",
-      label: "Years Experience",
-      description: "Building digital solutions"
+      value: "10+",
+      label: "Tech Skills Mastered",
+      description: "Full-stack dev, AI/ML, APIs & more"
     },
     {
       icon: Users,
@@ -103,31 +103,19 @@ const About = () => {
         </div>
 
         {/* Bio Section */}
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 items-center">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="space-y-6"
+            className="flex justify-center lg:justify-start"
           >
-            <div className="relative">
+            <div className="w-full max-w-sm">
               <img 
                 src={personalInfo.avatar}
                 alt={personalInfo.name}
-                className="w-full max-w-sm mx-auto lg:mx-0 rounded-2xl shadow-2xl"
-              />
-              <div className="absolute inset-0 bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-2xl" />
-              <motion.div
-                animate={{ 
-                  boxShadow: [
-                    '0 0 40px rgba(168, 85, 247, 0.3)',
-                    '0 0 60px rgba(236, 72, 153, 0.4)',
-                    '0 0 40px rgba(168, 85, 247, 0.3)',
-                  ]
-                }}
-                transition={{ duration: 3, repeat: Infinity }}
-                className="absolute inset-0 rounded-2xl"
+                className="w-full h-auto rounded-2xl"
               />
             </div>
           </motion.div>

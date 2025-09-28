@@ -127,20 +127,26 @@ const Projects = () => {
                       }}
                       className="absolute inset-0 bg-purple-900/80 backdrop-blur-sm flex items-center justify-center gap-4"
                     >
-                      <motion.button
-                        whileHover={{ scale: 1.1 }}
-                        whileTap={{ scale: 0.9 }}
-                        className="p-3 bg-white/20 rounded-full backdrop-blur-sm border border-white/30 hover:bg-white/30 transition-all duration-300"
-                      >
-                        <ExternalLink className="w-6 h-6 text-white" />
-                      </motion.button>
-                      <motion.button
-                        whileHover={{ scale: 1.1 }}
-                        whileTap={{ scale: 0.9 }}
-                        className="p-3 bg-white/20 rounded-full backdrop-blur-sm border border-white/30 hover:bg-white/30 transition-all duration-300"
-                      >
-                        <Github className="w-6 h-6 text-white" />
-                      </motion.button>
+                      {project.demoUrl && project.demoUrl !== '#' && (
+                        <motion.a href={project.demoUrl} target="_blank" rel="noopener noreferrer"
+                          whileHover={{ scale: 1.1 }}
+                          whileTap={{ scale: 0.9 }}
+                          className="p-3 bg-white/20 rounded-full backdrop-blur-sm border border-white/30 hover:bg-white/30 transition-all duration-300"
+                          aria-label="Live Demo"
+                        >
+                          <ExternalLink className="w-6 h-6 text-white" />
+                        </motion.a>
+                      )}
+                      {project.githubUrl && project.githubUrl !== '#' && (
+                        <motion.a href={project.githubUrl} target="_blank" rel="noopener noreferrer"
+                          whileHover={{ scale: 1.1 }}
+                          whileTap={{ scale: 0.9 }}
+                          className="p-3 bg-white/20 rounded-full backdrop-blur-sm border border-white/30 hover:bg-white/30 transition-all duration-300"
+                          aria-label="GitHub Repository"
+                        >
+                          <Github className="w-6 h-6 text-white" />
+                        </motion.a>
+                      )}
                     </motion.div>
                   </div>
 

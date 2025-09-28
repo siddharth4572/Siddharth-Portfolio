@@ -25,7 +25,6 @@ app = FastAPI()
 # Create a router with the /api prefix
 api_router = APIRouter(prefix="/api")
 
-
 # Define Models
 class StatusCheck(BaseModel):
     id: str = Field(default_factory=lambda: str(uuid.uuid4()))
@@ -43,7 +42,7 @@ async def root():
 @api_router.post("/status", response_model=StatusCheck)
 async def create_status_check(input: StatusCheckCreate):
     status_dict = input.dict()
-    status_obj = StatusCheck(**status_dict)
+    status_obj = StatusCheck(**status_dict, id=str(uuid.uuid4()), timestamp=datetime.utcnow())
     _ = await db.status_checks.insert_one(status_obj.dict())
     return status_obj
 

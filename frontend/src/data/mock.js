@@ -5,10 +5,10 @@ export const personalInfo = {
   title: "Software Engineer & AI/ML Enthusiast",
   bio: "I'm a passionate B.Tech Computer Science student with a drive for building meaningful and delightful digital products. I specialize in full-stack development, AI/ML innovations, and scalable cloud-based solutions that make a real impact.",
   email: "siddharthkatyal29@gmail.com",
-  github: "github.com/siddharth4572",
-  linkedin: "#", // Placeholder
-  instagram: "#", // Placeholder
-  avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face"
+  github: "https://github.com/siddharth4572",
+  linkedin: "https://www.linkedin.com/in/siddharth-katyal-262a09255/",
+  instagram: "https://www.instagram.com/siddkatyal29/",
+  avatar: "/avatar.svg"
 };
 
 export const projects = [
@@ -20,7 +20,7 @@ export const projects = [
     category: "AI/ML",
     status: "Live",
     demoUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/siddharth4572/Ecommerce-Chatbot-",
     image: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=600&h=400&fit=crop",
     highlights: ["Natural Language Processing", "Real-time Responses", "Product Integration"]
   },
@@ -32,7 +32,7 @@ export const projects = [
     category: "Web Development",
     status: "Live",
     demoUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/siddharth4572/CodCollab",
     image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop",
     highlights: ["Real-time Collaboration", "Multi-language Support", "Live Synchronization"]
   },
@@ -44,19 +44,19 @@ export const projects = [
     category: "Web Development",
     status: "Live",
     demoUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/siddharth4572/Chat-App-",
     image: "https://images.unsplash.com/photo-1577563908411-5077b6dc7624?w=600&h=400&fit=crop",
     highlights: ["Group Chat", "File Sharing", "Push Notifications"]
   },
   {
     id: 4,
-    title: "Cryptocurrency Price Prediction",
+    title: "Bitcoin and Ethereum Price Prediction",
     description: "Advanced machine learning system utilizing deep learning algorithms to predict Bitcoin & Ethereum price movements with high accuracy.",
     techStack: ["Python", "TensorFlow", "pandas", "scikit-learn", "LSTM"],
     category: "AI/ML",
     status: "Research",
     demoUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/siddharth4572/Bitcoin-and-Ethereum-Price-Prediction",
     image: "https://images.unsplash.com/photo-1518546305927-5a555bb7020d?w=600&h=400&fit=crop",
     highlights: ["LSTM Networks", "Technical Analysis", "Predictive Modeling"]
   },
@@ -68,9 +68,45 @@ export const projects = [
     category: "AI/ML",
     status: "Live",
     demoUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/siddharth4572/yoga-pose-detection",
     image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=600&h=400&fit=crop",
     highlights: ["Real-time Detection", "Computer Vision", "Fitness Tech"]
+  },
+  {
+    id: 6,
+    title: "Enhanced Blood Test Analysis System",
+    description: "A comprehensive blood test analysis system that allows users to upload reports, compare results over time, and get personalized AI-powered insights from a medical history-aware chatbot.",
+    techStack: ["Python", "Flask", "React", "SQLite", "Google Gemini", "Recharts"],
+    category: "AI/ML",
+    status: "Live",
+    demoUrl: "#",
+    githubUrl: "https://github.com/siddharth4572/Enhanced-Blood-Test-Analysis-System-with-AI-Assistant",
+    image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&h=400&fit=crop",
+    highlights: ["Personalized AI Insights", "Health Trend Tracking", "Contextual AI Chat"]
+  },
+  {
+    id: 7,
+    title: "Personal Finance Visualizer",
+    description: "A simple web application for tracking personal finances built with Next.js, React, shadcn/ui, Recharts, and MongoDB.",
+    techStack: ["Next.js", "React", "shadcn/ui", "Recharts", "MongoDB"],
+    category: "Web Development",
+    status: "Live",
+    demoUrl: "#",
+    githubUrl: "https://github.com/siddharth4572/Personal-Finance-App",
+    image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&h=400&fit=crop",
+    highlights: ["Transaction Tracking", "Interactive Charts", "Responsive Design"]
+  },
+  {
+    id: 8,
+    title: "Inventory & Order Sync System",
+    description: "A production-ready backend system for inventory management and order synchronization, featuring third-party e-commerce integrations and robust alerting.",
+    techStack: ["NestJS", "PostgreSQL", "Redis", "BullMQ", "Prisma", "AWS S3"],
+    category: "Backend",
+    status: "Live",
+    demoUrl: "#",
+    githubUrl: "https://github.com/siddharth4572/completeInventory",
+    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&h=400&fit=crop",
+    highlights: ["E-commerce Webhooks", "Real-time Stock Sync", "Automated Reporting"]
   }
 ];
 
@@ -94,7 +130,7 @@ export const skills = {
     { name: "Node.js", level: 85, icon: "nodejs" },
     { name: "Flask", level: 80, icon: "flask" },
     { name: "PostgreSQL", level: 75, icon: "postgresql" },
-    { name: "SQLite3", level: 80, icon: "sqlite" },
+    { name: "SQLite", level: 80, icon: "sqlite" },
     { name: "SQL", level: 85, icon: "database" }
   ],
   "AI/ML & Data Science": [
